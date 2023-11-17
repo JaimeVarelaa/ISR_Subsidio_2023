@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/Saludo"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola ">
+    </TextView>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:text="Configura los datos a calcular:">
+    </TextView>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="Monto: $">
+        </TextView>
+        <EditText
+            android:id="@+id/Amounts"
+            android:textSize="15dp"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="Periodo: ">
+        </TextView>
+        <Spinner
+            android:id="@+id/periodo"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/BtnAccept"
+        android:textSize="15dp"
+        android:backgroundTint="#1a6f89"
+        android:textColor="#F0F8FF"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Calcular">
+    </Button>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/BtnSalir"
+        android:textSize="15dp"
+        android:backgroundTint="#1a6f89"
+        android:textColor="#F0F8FF"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Salir">
+    </Button>
+
+</LinearLayout>
